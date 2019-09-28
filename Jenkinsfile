@@ -1,7 +1,7 @@
 node {
   
    stage('SCM Checkout'){
-	url: 'https://github.com/javahometech/myweb'
+	url: 'https://github.com/dnaresh4/cicd-jenkins-example'
    
    }
     stage('Compile-Package'){

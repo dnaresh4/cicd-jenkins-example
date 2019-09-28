@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-    
+    stages {
         stage ('Build') {
             steps {
              def mvnhome=tool name: 'MAVEN_HOME', type: 'maven'
@@ -25,3 +25,4 @@ pipeline {
         }
 
     }
+}

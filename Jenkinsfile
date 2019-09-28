@@ -7,7 +7,9 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-           sh 'mvn clean package'
+            withMaven(maven: 'MAVEN_HOME') {
+                    sh 'mvn clean package'
+                }
             }
         }
 

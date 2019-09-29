@@ -1,7 +1,6 @@
 ---
 applications:
   - name: cicd-jenkins-example
-    random-route: true
     instances: 1
     memory: 1G
     buildpack: java_buildpack
